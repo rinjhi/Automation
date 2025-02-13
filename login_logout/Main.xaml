@@ -1,0 +1,230 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="860.0000000000001,2218.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="550.4,2195.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cae527f4-910b-4778-8e65-1b4ce891ab1c">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="516.8,1955.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="strtimehrsformat" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT react-aria3843370…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="483.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="cae527f4-910b-4778-8e65-1b4ce891ab1c" Text="rinjhi152005.sairam@gmail.com" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="hackerrank.com/auth/login" CVScreenId="a79dd248-0823-4e0a-9b15-cddf918c29d1" ContentHash="cuL42KberEKOVIc7UlOgcg" CvElementArea="1265, 402, 558, 54" CvType="InputBox" DesignTimeRectangle="1269, 403, 552, 51" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='react-aria3843370335-976' tag='INPUT' type='text' class='c-imKhVI' placeholder='Your username or email' aaname='' /&gt;" Guid="752723d1-e5e3-4859-9288-a0f5a2131aa3" InformativeScreenshot="8ddd4d6ef3d5562db3a2e4f3104cf3a9.png" Reference="FEcY0n6IVkKDzln_GJAhQA/5SSRIzol6USU8Ogs6y_lrg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HackerRank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT react-aria3843370…(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="483.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="cae527f4-910b-4778-8e65-1b4ce891ab1c" Text="91#2025sana" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="hackerrank.com/auth/login" CVScreenId="4605c703-fee9-4bb5-9e59-b314e09c097a" ContentHash="pt3sn34sREqivkJbHbNwzQ" CvElementArea="1266, 473, 556, 54" CvType="InputBox" DesignTimeRectangle="1269, 474, 552, 51" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='react-aria3843370335-980' tag='INPUT' type='password' class='c-imKhVI' placeholder='Your password' aaname='' /&gt;" Guid="758468c7-b80f-468e-b45a-f555748b119b" InformativeScreenshot="4ce7302c5d522af8acc87ff1492989c8.png" Reference="FEcY0n6IVkKDzln_GJAhQA/oT7CMg4SPUyRBMqWBCkWnQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HackerRank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log In'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="483.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cae527f4-910b-4778-8e65-1b4ce891ab1c" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="hackerrank.com/auth/login" CVScreenId="960ad130-9db3-43ed-8831-b40e12161e12" ContentHash="5jnfIm9STEyDAnnyAV-wmg" CvElementArea="1267, 544, 556, 63" CvTextArea="1517, 566, 54, 21" CvTextArgument="Log In" CvType="Button" DesignTimeRectangle="1269, 545, 552, 60" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='c-cUYkx c-cUYkx-dshqME-variant-primary c-cUYkx-fGHEql-isFullWidth-true c-cUYkx-ABeol-size-large hr-inline-flex hr-justify-center hr-align-center hr-p-y-1' aaname='Log In' check:innerText='Log In' /&gt;" Guid="e7681136-9c46-41a9-9c88-b367eaf3fb4f" InformativeScreenshot="d41bf3de2c744b893d1330dc876c9d0d.png" Reference="FEcY0n6IVkKDzln_GJAhQA/v9_jf1DIikK-kw7B4Myppg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HackerRank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <Assign sap:VirtualizedContainerService.HintSize="483.2,114.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[strtimehrsformat]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[DateTime.Now.ToString("hh:mm:tt")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="483.2,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;sucessfully logged in&quot;+strtimehrsformat]" />
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Dashboard  HackerRank" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.2,527.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="19a0dc5d-b615-46e4-97d1-8091c0bca15b" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,278.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="19a0dc5d-b615-46e4-97d1-8091c0bca15b" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="hackerrank.com/dashboard" CVScreenId="83ed54a6-7832-493e-a519-d51f02f430c2" ContentHash="MNMDUjrrh06qlvsqcJvupA" CvElementArea="1823, 204, 32, 30" CvType="ArrowButton" DesignTimeRectangle="1831, 211, 17, 17" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl type='' parentid='content' tag='I' class='ui-icon-chevron-down down-icon' aaname='' /&gt;" Guid="26af60a4-e049-435a-9d23-a4ccb16cb4d9" InformativeScreenshot="3a0175326adca1e9d1f808bb36480313.png" Reference="FEcY0n6IVkKDzln_GJAhQA/TySraG6SVkeNFAYXZ3MnNA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard | HackerRank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="3KDuNoB6M0qL2K4-X2aVJw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAABzElEQVR4Xu3RsZECMQDF0K2AiJjqqJ4mICD8ERrfKZHnRRv471jX7f6I6NpP+U8FkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAdizA+8ezN5y953o9/9QuMgWAdpEpALSLTAGgXWQKAO0iUwBoF5kCQLvIFADaRaYA0C4yBYB2kSkAtItMAaBdZAoA7SJTAGgXmQJAu8gUANpFRgtw6uyffO2TnbWLTAGgXWQKAO0iUwBoF5kCQLvIFADaRaYA0C4yBYB2kSkAtItMAaBdZAoA7SJTAGgXmQJAu8gUANpFpgDQLjIFgHaR0QLsDWfv2Sc7axeZAkC7yBQA2kWmANAuMgWAdpEpALSLTAGgXWQKAO0iUwBoF5kCQLvIFADaRaYA0C4yBYB2kSkAtItMAaBdZAoA7SJzLECYAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuA7AMcpiLZKHMUFAAAAABJRU5ErkJggg==" InformativeScreenshot="6f181de4081404893f7b8c818b9a6b31.jpg" Reference="FEcY0n6IVkKDzln_GJAhQA/_TgPst2ajk2i48IFQuEB0Q" Selector="&lt;html app='chrome.exe' title='Dashboard | HackerRank' /&gt;" Url="https://www.hackerrank.com/dashboard" Version="V2" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Logout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="483.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cae527f4-910b-4778-8e65-1b4ce891ab1c" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="hackerrank.com/dashboard" CVScreenId="a22b58a2-3a00-4c72-8b94-d210c53c31f8" ContentHash="_1PQjWBMb0-2zNvYPm7uYg" CvTextArea="1610, 796, 58, 21" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="1611, 779, 212, 50" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Logout' tag='BUTTON' type='' class='btn-as-link profile-nav-item-link logout-button' check:innerText='Logout' /&gt;" Guid="ffdcd48c-a241-483d-8aed-46b79b7755de" InformativeScreenshot="e14c73f0486c4f9538d49ee44828ec8a.png" Reference="FEcY0n6IVkKDzln_GJAhQA/CbWmBd3TAUa1WkgpIPghEg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard | HackerRank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="483.2,110.4" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;sucessfully loged out&quot;+strtimehrsformat]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="h9oFPkBBLEWFgCJTQJ4N-A" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAABzElEQVR4Xu3RsZECMQDF0K2AiJjqqJ4mICD8ERrfKZHnRRv471jX7f6I6NpP+U8FkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAVgBZAWQFkBVAdizA+8ezN5y953o9/9QuMgWAdpEpALSLTAGgXWQKAO0iUwBoF5kCQLvIFADaRaYA0C4yBYB2kSkAtItMAaBdZAoA7SJTAGgXmQJAu8gUANpFRgtw6uyffO2TnbWLTAGgXWQKAO0iUwBoF5kCQLvIFADaRaYA0C4yBYB2kSkAtItMAaBdZAoA7SJTAGgXmQJAu8gUANpFpgDQLjIFgHaR0QLsDWfv2Sc7axeZAkC7yBQA2kWmANAuMgWAdpEpALSLTAGgXWQKAO0iUwBoF5kCQLvIFADaRaYA0C4yBYB2kSkAtItMAaBdZAoA7SJzLECYAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuArACyAsgKICuA7AMcpiLZKHMUFAAAAABJRU5ErkJggg==" InformativeScreenshot="649d15d3501293e47110fdc4740bcc97.jpg" Reference="FEcY0n6IVkKDzln_GJAhQA/ca5ftBX5FE-oqZA3FvSzjA" Selector="&lt;html app='chrome.exe' title='HackerRank' /&gt;" Url="https://www.hackerrank.com/auth/login" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

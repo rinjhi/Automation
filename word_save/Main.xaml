@@ -1,0 +1,197 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="892.0000000000001,1555.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="INVOICE _TEMPLETE - Word" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.2,1532" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="f594091e-0c54-4047-9db0-aa6f27b17d54" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1241.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'File Tab'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f594091e-0c54-4047-9db0-aa6f27b17d54" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="e7143241-6b8d-45ad-a9a7-b67747be27b0" ContentHash="9SpJseHz8ki-l0uzCDePjw" CvTextArea="35, 79, 26, 17" CvTextArgument="File" CvType="Text" DesignTimeRectangle="14, 69, 68, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia automationid='FileTabButton' cls='NetUIRibbonTab' name='File Tab' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia automationid='FileTabButton' cls='NetUIRibbonTab' name='File Tab' role='Button' check:fulltext='File Tab' /&gt;" Guid="a4bb96f2-12da-4593-bad4-6feb6ced2018" InformativeScreenshot="7abf2cd7a78d9810b8f165684b626591.png" Reference="0w1eejbZAUe1ZuEY82S5gA/JZGT4rha8E2EWDEAJQ9XpQ" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='INVOICE _TEMPLETE - Word' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save As(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f594091e-0c54-4047-9db0-aa6f27b17d54" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="b84514f3-3e83-41b7-82f4-2a464475b600" ContentHash="Q5CDF-UXQUGWsX9-ua_6sg" CvElementArea="11, 494, 171, 50" CvTextArea="60, 512, 53, 15" CvTextArgument="Save As" CvType="Button" DesignTimeRectangle="9, 495, 175, 50" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;uia automationid='NavBarMenu' cls='NetUIKeyboardTabElement' name='File' /&gt;&lt;uia cls='NetUIRibbonTab' name='Save As' /&gt;" FuzzySelectorArgument="&lt;uia automationid='NavBarMenu' cls='NetUIKeyboardTabElement' name='File' /&gt;&lt;uia cls='NetUIRibbonTab' name='Save As' role='List Item' automationid='' check:fulltext='Save As' /&gt;" Guid="af2a8849-27d5-4e94-8e57-5bee7058202c" InformativeScreenshot="7cb7ba678467add0b0b0adad3ab62aa2.png" Reference="0w1eejbZAUe1ZuEY82S5gA/jGpdn3ccfUKZPLXk8Om14g" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='INVOICE _TEMPLETE - Word' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pin this item to the li…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f594091e-0c54-4047-9db0-aa6f27b17d54" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="8OvN9aoHiU2A0BAgHlOzIw" DesignTimeRectangle="628, 386, 943, 74" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;uia cls='NetUIElement' name='Save As' /&gt;&lt;uia automationid='GroupGettingStartedSaveAsMRUPlacesOrNavSlab' cls='NetUISlabContainer' /&gt;&lt;uia cls='NetUICoreListView' /&gt;&lt;uia cls='NetUIVirtualListElement' name='Older' /&gt;&lt;uia cls='NetUIVirtualListElement' name='constitution' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIElement' name='Save As' /&gt;&lt;uia automationid='GroupGettingStartedSaveAsMRUPlacesOrNavSlab' cls='NetUISlabContainer' /&gt;&lt;uia cls='NetUICoreListView' /&gt;&lt;uia cls='NetUIVirtualListElement' name='Older' /&gt;&lt;uia cls='NetUIVirtualListElement' name='constitution' role='List Item' automationid='' check:fulltext='Pin this item to the list' /&gt;" Guid="43f43e38-7639-4f79-935c-92b92f174dc9" InformativeScreenshot="20d2ada0547527edb7dd193e1d57dc4b.png" Reference="0w1eejbZAUe1ZuEY82S5gA/P-GYJlqUgkKEc_FhvyB_EQ" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='INVOICE _TEMPLETE - Word' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="f594091e-0c54-4047-9db0-aa6f27b17d54" Text="INV_CustmoerName.docx" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="66ec53a7-16a8-4b19-947e-7ed03558926c" ContentHash="9mcjplYvwkGCzxcGDWWh2A" CvElementArea="166, 401, 780, 30" CvType="InputBox" DesignTimeRectangle="169, 405, 752, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="e99518a4-a8b7-4a11-a842-13fd32bb7305" InformativeScreenshot="d7beae391c5975f0d214f548bccf30d9.png" IsResponsive="True" Reference="0w1eejbZAUe1ZuEY82S5gA/zY-YpZEFtUerLOg8tmBRgA" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="66ec53a7-16a8-4b19-947e-7ed03558926c" CvTextArea="91, 408, 69, 14" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="22, 402, 144, 28" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;ctrl name='Explorer Pane' role='pane' /&gt;&lt;ctrl name='Folder Layout Pane' role='pane' /&gt;&lt;ctrl name='Details Pane' role='pane' /&gt;&lt;ctrl name='File name:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;ctrl name='Explorer Pane' role='pane' /&gt;&lt;ctrl name='Folder Layout Pane' role='pane' /&gt;&lt;ctrl name='Details Pane' role='pane' /&gt;&lt;ctrl name='File name:' role='text' automationid='' check:text='File name:' /&gt;" Guid="ffe537cc-c153-4e52-9200-4e4d2fa94ed4" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f594091e-0c54-4047-9db0-aa6f27b17d54" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="1e737746-cfd5-4215-84b9-5a451189df25" ContentHash="eTQs9xn3xEyRlgNtuP3JjQ" CvElementArea="694, 569, 110, 33" CvTextArea="731, 578, 33, 13" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="695, 570, 110, 33" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' check:text='&amp;amp;Save' /&gt;" Guid="fed7291e-3702-45ab-87d9-a75b55705161" InformativeScreenshot="2e8cb1feec61f85159420d771000d304.png" Reference="0w1eejbZAUe1ZuEY82S5gA/KPLPxCP2mEa3Tvo8o-M6nA" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" Arguments="d:\bca\invoice _templete.docx" ContentHash="ps34FjkdYECmuh6vyHg46Q" FilePath="C:\Program Files\Microsoft Office\root\Office16\winword.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATHSURBVFhH7Zh7UFRVHMcPTTOVIbuwsLxMXqYGUzOZI0QKOs2AoMVLQELioSJUNobjWAZMltEkKNQ0NdUkNVBDJsuuJgLKsssjQskSlcqh4ZVWBFJj5R/+8W3OuXvv3r2Xxy7c9g+n38xnuHuXM78Pv9/vnDMDIbdR3OFk7A6XdbXjhnWfXodTqZ3QS0Wmi7tli50EIeROqcxUoZIudBaEEFepzFShli50FoQQD6nMVPG/4HQ4IDiB2ZEnmC92C0YdGcX0/MyIrr6GtTVj9HiQJZorTHBJYVfDksIuhBR0MoJ3UDoQnN+BIMr2DgRua+fY2o4AhhmL88xYnGvGfTkmxqJsE5a+0IPo6qtYWzMuSzYXmGBIoURsh1UsaLtFbNsUYrlWsUXZbfB/ug3+WW24/7kzCH2xF2HFfQgrvjgvOEGRnFXMWjUbsTwqZls1f4ucX5YRfluMCM5vxAN7uhH28gVZQkdhgoKYpJ1SMWk7rVUzMjnfLUb4ZhoRtNWA5bs7EbrvO1lCR2GC4nZWHR9GpWEYj+3tEeQi9/TgsH6IEVvSK4iFF3XjkG4QFbpBJuab2Qqfp1oRmKvD8qJ2hO77VpbQUThB0ZyNjt8EjUr9kKWdJrzy2QB7R+PD5lE2Z7RipbVX2LuRsZtMjOKdccYiaFZOUNzOLzp/ZUm7v58U2tn0ze+C4KXhG2zOaDs/b/+FvaszX4NPxhl4b6acRmBOvbKC4jnjq/Xn37eEOaPP4liW387aeWnoBvtc8smPTMw7/TS06S0IUFpQfGzElvYKIhFF3YgpPseev+qfFISSXzsPn4xW4fce3/s1vNNboE1rgTa1GQHZCgvanmcmoWJ5VX3Y9X4/e/7g1AiDRvmxn5D0KveH/PHXLUFMm9oE7aYmBGQfU1hQcp419XIzV1E/KMxZzqELeP69y+y56/J11lYajWd/4+Q2NcEr5RTDM74a2pR6+GxuETbPXGGC4luA7c4abnd29U+yHUpj5c5OBh91pqvs58GjA/Di5ZIbGZ7xR5QV5MXY7sw0IvnAeUGEBpXkNkELRsb+sfkusbQHXsmcnGfSSXgmnlRekD82qBz/hTgaz45xc5bWjLo2rnJ8cGKNnFjCl/B88gQ0cQoLim8B/jyjc8ZH8cc/CHO2850+4X3nxQmrWMIJaKjcE8ehiftIWUH2IYO7BfjzLGn/OZQfHWA88oxZmLMVBSYcrLvCyCrrZXKCGGWjQXlBQcwyZ9Jjg9sAkjnj28nLbTTAY4MBHvF6aNYrLcjfApY5szk2BDHJnInENFRsgx4e8Q3wiGtQXpBeT0LVqJj42KBirGqSOROqZhVzX6+De2w9NDHvQpuiU1AwtbmBttMqJm8nE7NpJxXTi8R0cI+ph9vqt7FwxW6oIt+AOuow1NFvzQsmaEeo7wlJwMwkYsHSNNz7YAHcVhVDtfpNqKMrZQkdxW5B14cKMTPPwvXhXVi48iWoHj0A9ZoKqKOrZAkdxW5Bt1UlmJHwUrhF7IcqsgyqNeVQR82/ehS7BWnS2WBVY3OnjBzFbkGuXfYgTzIfHBCUL3YGt43gAlVkmVG6+L9GFfl6GyHETSozVdxFCFlGCIlwIuGWnDT3rOFi+VesDyHEz0nQXDSny78bRNmOvhvqBQAAAABJRU5ErkJggg==" InformativeScreenshot="ea8d04700268e207019b8245b853ddd8.png" Reference="0w1eejbZAUe1ZuEY82S5gA/m-9zFwmmEEukT5vP43nvFQ" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='INVOICE _TEMPLETE - Word' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
